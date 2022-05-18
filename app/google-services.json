@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "77873659951",
+    "project_id": "onlstay",
+    "storage_bucket": "onlstay.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77873659951:android:9398f3bffd8acbf07546da",
+        "android_client_info": {
+          "package_name": "com.daisymai99.onlstay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "77873659951-nlp8c68afgs5pkqr444ubgoqksu9q4bt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.daisymai99.onlstay",
+            "certificate_hash": "870e8704d6e6aee3fecd84be5b6e2f3f62f6f646"
+          }
+        },
+        {
+          "client_id": "77873659951-rv1g3jjq6fi9g3ubpk398smgkoc8ql00.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_SPOkrBehb704kyflKdiejK_taQOG0_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "77873659951-rv1g3jjq6fi9g3ubpk398smgkoc8ql00.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
