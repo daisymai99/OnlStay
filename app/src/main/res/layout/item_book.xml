@@ -67,6 +67,7 @@
             android:text="Đặt phòng"
             android:id="@+id/btn_book"
             android:layout_gravity="center_vertical"
+            android:clickable="true"
             android:layout_marginLeft="100dp"/>
 
         <!--<ImageButton

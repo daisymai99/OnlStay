@@ -23,6 +23,7 @@ class Owner_room : AppCompatActivity() {
     var id =0
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityOwnerRoomBinding.inflate(layoutInflater)
@@ -49,14 +50,7 @@ class Owner_room : AppCompatActivity() {
             .addOnSuccessListener {
 
 
-                /*storeReference.downloadUrl.addOnSuccessListener {
 
-                    FirebaseDatabase.getInstance().getReference("owner");
-                    lateinit var map : HashMap<String,String>
-                    map.put("imageurl", IMGURI.toString() )
-
-
-                }*/
                 Toast.makeText(this.applicationContext,"Đã tạo thành công", Toast.LENGTH_LONG).show()
                 finish()
 

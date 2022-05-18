@@ -1,5 +1,6 @@
 package com.daisymai99.onlstay.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -18,6 +19,11 @@ class AdsAdapter() :RecyclerView.Adapter<AdsAdapter.ViewHolder>() {
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.binding.image.setImageResource(img[position])
+        holder.binding.image.setOnClickListener {
+            if (img[position] ==1){
+                it.context.startActivity(Intent(it.context,))
+            }
+        }
     }
 
     override fun getItemCount(): Int {

@@ -32,13 +32,18 @@ class AccountFragment : Fragment() {
         binding = FragmentAccount2Binding.inflate(layoutInflater)
 
         binding.btnInfo.setOnClickListener { v ->
-            startActivity(Intent(this.context,MainActivity::class.java))
+            startActivity(Intent(this.context,Login::class.java))
 
         }
 
         binding.btnOwner.setOnClickListener { v ->
 
-            startActivity(Intent(this.context,Owner_room::class.java))
+            startActivity(Intent(this.context,MainActivity::class.java))
+        }
+
+        binding.btnClient.setOnClickListener {
+
+            startActivity(Intent(this.context,Owner_main::class.java))
         }
 
         binding.txtUserName.text = SavedPreference.getUsername(this.requireContext())

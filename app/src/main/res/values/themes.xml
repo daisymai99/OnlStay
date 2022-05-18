@@ -23,4 +23,13 @@
 
         <item name="postSplashScreenTheme">@style/Theme.OnlStay</item>
     </style>
+
+    <style name="Theme.OnlStay.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.OnlStay.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.OnlStay.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

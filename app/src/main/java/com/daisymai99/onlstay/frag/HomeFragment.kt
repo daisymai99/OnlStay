@@ -42,8 +42,7 @@ class HomeFragment : Fragment() {
         // list-of_city
         var adapter = Circle_Recycle_Adapter()
 
-        val layoutManager: RecyclerView.LayoutManager = LinearLayoutManager(this.context,
-            LinearLayoutManager.HORIZONTAL,false)
+        val layoutManager: RecyclerView.LayoutManager = LinearLayoutManager(this.context, LinearLayoutManager.HORIZONTAL,false)
         binding.rcl.setHasFixedSize(true)
         binding.rcl.setLayoutManager(layoutManager)
         binding.rcl.adapter = adapter
@@ -51,8 +50,7 @@ class HomeFragment : Fragment() {
 
         // cardView
         var card_adapter = CardAdapter()
-        binding.card2Column.layoutManager = LinearLayoutManager(this.context,
-            LinearLayoutManager.HORIZONTAL,false)
+        binding.card2Column.layoutManager = LinearLayoutManager(this.context, LinearLayoutManager.HORIZONTAL,false)
         binding.card2Column.setHasFixedSize(true)
         binding.card2Column.adapter = card_adapter
 
