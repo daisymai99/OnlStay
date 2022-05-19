@@ -68,9 +68,10 @@ class Login : AppCompatActivity() {
             }
         }
 
-        binding.btnClose.setOnClickListener{
+       /* binding.btnClose.setOnClickListener{
             finish()
-        }
+        }*/
+
 
 
 
