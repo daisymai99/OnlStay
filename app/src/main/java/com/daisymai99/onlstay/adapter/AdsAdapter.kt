@@ -4,6 +4,7 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.daisymai99.onlstay.Ads_activity_1
 import com.daisymai99.onlstay.R
 import com.daisymai99.onlstay.databinding.ItemAdsBinding
 
@@ -21,7 +22,9 @@ class AdsAdapter() :RecyclerView.Adapter<AdsAdapter.ViewHolder>() {
         holder.binding.image.setImageResource(img[position])
         holder.binding.image.setOnClickListener {
             if (img[position] ==1){
-                it.context.startActivity(Intent(it.context,))
+                it.context.startActivity(Intent(it.context,Ads_activity_1::class.java))
+            } else{
+                it.context.startActivity(Intent(it.context,Ads_activity_1::class.java))
             }
         }
     }

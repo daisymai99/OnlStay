@@ -14,6 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OnlStay">
         <activity
+            android:name=".ListRoom"
+            android:exported="false" />
+        <activity
+            android:name=".Ads_activity_2"
+            android:exported="false" />
+        <activity
             android:name=".Ads_activity_1"
             android:exported="false"
             android:label="@string/title_activity_ads1"
