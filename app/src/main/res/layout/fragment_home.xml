@@ -178,7 +178,7 @@
             </LinearLayout>
 
             // exp
-            <LinearLayout
+            <!--<LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -198,14 +198,14 @@
                     android:layout_height="wrap_content"
                     android:text="@string/exp_1"
                     android:textSize="20dp"
-                    android:layout_marginTop="15dp"/>
+                    android:layout_marginTop="15dp"/>-->
 
                 <!--<androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/rcl_exp"/>-->
-
-            </LinearLayout>
+<!--
+            </LinearLayout>-->
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 

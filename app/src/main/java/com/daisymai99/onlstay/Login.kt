@@ -55,6 +55,8 @@ class Login : AppCompatActivity() {
             startActivityForResult(signInIntent,Req_Code)
         }
 
+        binding.txtNameUser.text = SavedPreference.getUsername(this)
+
         // chưa đc
 
         binding.btnSignOut.setOnClickListener {

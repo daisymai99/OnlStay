@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.Filter
 import android.widget.Filterable
 import androidx.recyclerview.widget.RecyclerView
+import com.daisymai99.onlstay.ListRoom
 import com.daisymai99.onlstay.MainActivity
 import com.daisymai99.onlstay.databinding.ItemPlaceBinding
 import java.util.*
@@ -38,7 +39,7 @@ class SearchAdapter(var data : ArrayList<String>): RecyclerView.Adapter<SearchAd
         with(holder) {
             binding.txtItemPlace.text = newList[position]
             binding.txtItemPlace.setOnClickListener {
-                v -> v.context.startActivity(Intent(v.context,MainActivity::class.java))
+                v -> v.context.startActivity(Intent(v.context,ListRoom::class.java))
             }
         }
 

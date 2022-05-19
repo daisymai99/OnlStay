@@ -17,4 +17,45 @@
         android:background="@android:drawable/dialog_holo_light_frame"
         android:layout_marginBottom="50dp"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="chọn ngày"
+            android:id="@+id/btn_pickDate"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_gravity="center|end"
+            android:layout_marginLeft="50dp"
+            android:text="Ngày"
+            android:textStyle="bold"
+            android:id="@+id/tvDate"/>
+
+
+
+    </LinearLayout>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_book"
+            android:id="@+id/rclListRoom"/>
+
+    </androidx.core.widget.NestedScrollView>
+
 </LinearLayout>

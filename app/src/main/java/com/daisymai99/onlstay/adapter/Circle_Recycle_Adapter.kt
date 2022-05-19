@@ -4,6 +4,7 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.daisymai99.onlstay.ListRoom
 import com.daisymai99.onlstay.List_Place
 import com.daisymai99.onlstay.R
 import com.daisymai99.onlstay.databinding.CircleListCityBinding
@@ -35,7 +36,7 @@ class Circle_Recycle_Adapter() : RecyclerView.Adapter<Circle_Recycle_Adapter.Vie
         holder.binding.profileImage.setImageResource(img[position])
 
         holder.binding.profileImage.setOnClickListener {
-                v -> v.context.startActivity(Intent(v.context, List_Place::class.java)) }
+                v -> v.context.startActivity(Intent(v.context, ListRoom::class.java)) }
 
 
         }
