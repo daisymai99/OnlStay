@@ -55,18 +55,27 @@ class Login : AppCompatActivity() {
             startActivityForResult(signInIntent,Req_Code)
         }
 
-        binding.txtNameUser.text = SavedPreference.getUsername(this)
+        binding.btnLogIn.setOnClickListener {
+
+        }
+
+        binding.btnSignUp.setOnClickListener {
+            val intent = Intent(this, SignUp::class.java)
+            startActivity(intent)
+        }
+
+        /*binding.txtNameUser.text = SavedPreference.getUsername(this)*/
 
         // chưa đc
 
-        binding.btnSignOut.setOnClickListener {
+        /*binding.btnSignOut.setOnClickListener {
             mGoogleSignInClient.signOut().addOnCompleteListener {
                 SavedPreference.setEmail(this,"")
                 SavedPreference.setUsername(this,"")
                 Toast.makeText(this,"Logging Out",Toast.LENGTH_SHORT).show()
                 finish()
             }
-        }
+        }*/
 
        /* binding.btnClose.setOnClickListener{
             finish()

@@ -39,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Login"
+            android:text="Đăng ký"
             android:layout_gravity="center_horizontal"
             android:textSize="30dp"
             android:textStyle="bold"
@@ -89,6 +89,23 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtMail"
+                    android:shadowRadius="@android:integer/config_mediumAnimTime"
+                    android:hint="Nhập email"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
         </LinearLayout>
 
 
@@ -96,9 +113,9 @@
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="200dp"
             android:layout_height="70dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="50dp"
             android:layout_gravity="center_horizontal"
-            android:text="Đăng nhập"
+            android:text="Đăng ký"
             android:background="@color/purple_700"
             android:textColor="@color/white"
             android:id="@+id/btnLogIn"/>
@@ -106,21 +123,19 @@
 
 
 
-        <com.google.android.gms.common.SignInButton
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="70dp"
+        <androidx.appcompat.widget.AppCompatCheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đã có tài khoản"
+            android:id="@+id/txtAccount"
+            android:clickable="true"
+            android:textStyle="bold"
             android:layout_gravity="center_horizontal"
-            android:id="@+id/btn_sIgnInEmail"/>
+            android:layout_marginTop="70dp"/>
 
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="30dp"
-            android:layout_gravity="center_horizontal"
-            android:text="Đăng ký"
-            android:id="@+id/btn_signUp"/>
+
+
 
 
     </LinearLayout>
