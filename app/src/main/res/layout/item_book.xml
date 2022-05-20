@@ -18,12 +18,12 @@
             android:layout_width="match_parent"
             android:layout_height="180dp"
             android:scaleType="centerCrop"
-            android:id="@+id/image_favor"/>
+            android:id="@+id/image_room"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/txtNameHotel"
+            android:id="@+id/txt_ID_Rooom"
             android:textSize="25dp"
             android:textStyle="bold"
             android:text="alo"
@@ -35,12 +35,29 @@
             android:layout_margin="20dp"
             hardwareAccelerated = "true">
 
-            <TextView
-                android:text="tessttttttt"
-                android:layout_margin="20dp"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/txtAddress"/>
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text=""
+                    android:layout_margin="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtTimeNhan"/>
+
+                <TextView
+                    android:text=""
+                    android:layout_marginLeft="100dp"
+                    android:layout_margin="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtTimeTra"/>
+
+            </LinearLayout>
+
+
 
 
         </androidx.cardview.widget.CardView>
@@ -61,7 +78,21 @@
             android:layout_marginLeft="20dp"
             android:layout_marginBottom="10dp"/>
 
-        <androidx.appcompat.widget.AppCompatButton
+
+        <TextView
+            android:gravity="right"
+            android:textColor="#F44336"
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Trạng thái"
+            android:textSize="16dp" />
+
+        <!--<androidx.appcompat.widget.AppCompatButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Đặt phòng"
@@ -69,7 +100,7 @@
             android:layout_gravity="center_vertical"
             android:clickable="true"
             android:layout_marginLeft="100dp"/>
-
+-->
         <!--<ImageButton
             android:layout_width="150dp"
             android:layout_height="65dp"

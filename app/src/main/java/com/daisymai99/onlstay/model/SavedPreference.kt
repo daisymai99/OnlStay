@@ -19,6 +19,10 @@ object SavedPreference {
         )?.edit()?.putString(const,string)?.apply()
     }
 
+    fun removeAll(context: Context){
+        getSharedPreference(context)?.edit()?.clear()?.apply()
+    }
+
     fun getEmail(context: Context)= getSharedPreference(
         context
     )?.getString(EMAIL,"")

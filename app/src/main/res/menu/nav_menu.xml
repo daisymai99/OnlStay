@@ -7,10 +7,10 @@
         android:title="@string/nav_home"/>
 
 
-    <!--<item
+    <item
         android:id="@+id/ic_favo"
         android:icon="@drawable/favor"
-        android:title="@string/nav_favor"/>-->
+        android:title="@string/nav_favor"/>
 
     <item
         android:id="@+id/ic_book"

@@ -48,10 +48,10 @@ class MainActivity : AppCompatActivity() {
                     currentfragment = HomeFragment()
                     binding.viewpager.currentItem=0
                 }
-                /*R.id.ic_favo -> {
+                R.id.ic_favo -> {
                     currentfragment = FavorFragment()
                     binding.viewpager.currentItem=1
-                }*/
+                }
                 R.id.ic_book -> {
                     currentfragment = BookFragment()
                     binding.viewpager.currentItem=1

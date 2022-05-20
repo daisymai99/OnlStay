@@ -33,10 +33,10 @@ class itemBook( var item : ArrayList<Room>) : RecyclerView.Adapter<itemBook.View
                 .load("http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcR2Ti73tnFRgh3cENA6buMO4tjpxb_1aCpDDB5uxM_zQ_TlvnqSkTSHfT6DpqIGGCCzz_hS6oyqCcfBbb2p6mA") // image url
                 .override(200, 200) // resizing
                 .centerCrop()
-                .into(binding.imageFavor);  // imageview object
+                .into(binding.imageRoom);  // imageview object
 
-            binding.txtNameHotel.text = item[position].idRoom.toString()
-            binding.txtAddress.text = item[position].adddress
+           /* binding.txtIDRooom.text = item[position].id.toString()
+            binding.txtTimeNhan.text = item[position].adddress
             binding.txtPrice.text = item[position].price.toString()
 
             binding.btnBook.setOnClickListener {
@@ -51,7 +51,7 @@ class itemBook( var item : ArrayList<Room>) : RecyclerView.Adapter<itemBook.View
                         Log.w(TAG, "Error adding document", e)
                     }
 
-            }
+            }*/
 
         }
     }

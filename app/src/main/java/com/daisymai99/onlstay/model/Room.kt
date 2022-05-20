@@ -1,23 +1,30 @@
 package com.daisymai99.onlstay.model
 
-class Room(var namehotel:String, var addd: String, var id :Int, var noiquy :String, var image :String ,var priceRoom: Int, var timeTake : String, var timeOut:String, var status :Int ){
+class Room {
+    var id = 0
+    var noiQuyPhong: String? = null
+    var img: String? = null
+    var timeNhanPhong: String? = null
+    var timeTraPhong: String? = null
+    var statusRoom: Boolean? = null
+    var price :String ?=null
 
-
-
-    var nameHotel : String =""
-
-    var adddress :String =""
-    var idRoom : Int =0
-    var noiQuyRoom : String  =""
-    var img : String =""
-    var price :Int =0
-    var timeNhanRoom : String =""
-    var timeTraRoom :String =" "
-    var statusRoom :Int = 0
-
-    constructor() : this("","",0,"","",0,"00:00","00:00",0) {
+    constructor() {}
+    constructor(
+        id: Int,
+        noiQuyPhong: String?,
+        img: String?,
+        timeNhanPhong: String?,
+        timeTraPhong: String?,
+        statusRoom: Boolean?,
+        price :String
+    ) {
+        this.id = id
+        this.noiQuyPhong = noiQuyPhong
+        this.img = img
+        this.timeNhanPhong = timeNhanPhong
+        this.timeTraPhong = timeTraPhong
+        this.statusRoom = statusRoom
+        this.price = price
     }
-
-
-
 }

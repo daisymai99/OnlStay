@@ -45,8 +45,8 @@ class Owner_main : AppCompatActivity() {
                     binding.viewpager.currentItem=0
                 }
 
-                R.id.ic_favo -> {
-                    currentfragment = FavorFragment()
+                R.id.ic_room -> {
+                    currentfragment = OwnerFragment()
                     binding.viewpager.currentItem=1
                 }
                 R.id.ic_acc -> {

@@ -11,6 +11,7 @@ import android.widget.Toast
 import com.daisymai99.onlstay.*
 import com.daisymai99.onlstay.databinding.FragmentAccount2Binding
 import com.daisymai99.onlstay.model.SavedPreference
+import com.google.firebase.database.R
 
 
 class AccountFragment : Fragment() {
@@ -29,6 +30,9 @@ class AccountFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+
+
+
         binding = FragmentAccount2Binding.inflate(layoutInflater)
 
         binding.btnInfo.setOnClickListener { v ->
@@ -38,12 +42,12 @@ class AccountFragment : Fragment() {
 
         binding.btnOwner.setOnClickListener { v ->
 
-            startActivity(Intent(this.context,MainActivity::class.java))
+            startActivity(Intent(this.context,Owner_main::class.java))
         }
 
         binding.btnClient.setOnClickListener {
 
-            startActivity(Intent(this.context,Owner_main::class.java))
+            startActivity(Intent(this.context,MainActivity::class.java))
         }
 
         binding.txtUserName.text = SavedPreference.getUsername(this.requireContext())
