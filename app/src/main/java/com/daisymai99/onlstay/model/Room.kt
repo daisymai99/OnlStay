@@ -8,6 +8,8 @@ class Room {
     var timeTraPhong: String? = null
     var statusRoom: Boolean? = null
     var price :String ?=null
+    var idOwner : String ?=null
+    var idUser :String? =null
 
     constructor() {}
     constructor(

@@ -95,7 +95,7 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="200dp"
-            android:layout_height="70dp"
+            android:layout_height="50dp"
             android:layout_marginTop="30dp"
             android:layout_gravity="center_horizontal"
             android:text="Đăng nhập"
@@ -108,8 +108,8 @@
 
         <com.google.android.gms.common.SignInButton
             android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="70dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
             android:layout_gravity="center_horizontal"
             android:id="@+id/btn_sIgnInEmail"/>
 

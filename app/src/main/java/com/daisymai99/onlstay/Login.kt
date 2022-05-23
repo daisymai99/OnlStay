@@ -56,7 +56,7 @@ class Login : AppCompatActivity() {
         }
 
         binding.btnLogIn.setOnClickListener {
-
+            logInFirebase(binding.edtName.text.toString(),binding.edtPass.text.toString())
         }
 
         binding.btnSignUp.setOnClickListener {
@@ -64,22 +64,9 @@ class Login : AppCompatActivity() {
             startActivity(intent)
         }
 
-        /*binding.txtNameUser.text = SavedPreference.getUsername(this)*/
 
-        // chưa đc
 
-        /*binding.btnSignOut.setOnClickListener {
-            mGoogleSignInClient.signOut().addOnCompleteListener {
-                SavedPreference.setEmail(this,"")
-                SavedPreference.setUsername(this,"")
-                Toast.makeText(this,"Logging Out",Toast.LENGTH_SHORT).show()
-                finish()
-            }
-        }*/
 
-       /* binding.btnClose.setOnClickListener{
-            finish()
-        }*/
 
 
 
@@ -149,6 +136,13 @@ class Login : AppCompatActivity() {
         }
     }
 
+    private fun logInFirebase(name : String, password :String){
+        FirebaseAuth.getInstance().signInWithEmailAndPassword(name,password)
+            .addOnCompleteListener {
+                if (!it.isSuccessful) return@addOnCompleteListener
+
+            }
+    }
 
 
 

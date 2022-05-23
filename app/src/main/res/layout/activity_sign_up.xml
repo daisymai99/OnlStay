@@ -15,15 +15,7 @@
         android:id="@+id/btn_logo"
         android:src="@drawable/logo_app" />
 
-    <!--<ImageView
-        android:id="@+id/btn_close"
-        android:layout_width="100dp"
-        android:layout_height="75dp"
-        android:layout_alignParentEnd="true"
-        android:layout_gravity="right"
-        android:layout_marginEnd="-1dp"
-        android:clickable="true"
-        android:src="@drawable/close" />-->
+
 
 
 
@@ -64,13 +56,30 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:id="@+id/edtEmail"
+                    android:shadowRadius="@android:integer/config_mediumAnimTime"
+                    android:hint="Nhập email"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:id="@+id/edtName"
                     android:shadowRadius="@android:integer/config_mediumAnimTime"
                     android:hint="Nhập tên"
                     android:inputType="text"/>
 
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -89,23 +98,6 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/edtMail"
-                    android:shadowRadius="@android:integer/config_mediumAnimTime"
-                    android:hint="Nhập email"
-                    android:inputType="text"/>
-
-            </com.google.android.material.textfield.TextInputLayout>
-
         </LinearLayout>
 
 
@@ -116,9 +108,10 @@
             android:layout_marginTop="50dp"
             android:layout_gravity="center_horizontal"
             android:text="Đăng ký"
+            android:enabled="true"
             android:background="@color/purple_700"
             android:textColor="@color/white"
-            android:id="@+id/btnLogIn"/>
+            android:id="@+id/btnSignUp"/>
 
 
 
@@ -127,7 +120,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Đã có tài khoản"
-            android:id="@+id/txtAccount"
+            android:id="@+id/txtAlreadyHaveAccount"
             android:clickable="true"
             android:textStyle="bold"
             android:layout_gravity="center_horizontal"
