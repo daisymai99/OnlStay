@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ads_activity_1"
+    tools:context=".activities.Ads_activity_1"
     android:orientation="vertical">
 
     <LinearLayout
@@ -15,7 +15,9 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:id="@+id/img_ads"/>
+            android:id="@+id/img_ads"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ads"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -23,14 +25,36 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="25dp"
             android:textStyle="bold"
-            android:id="@+id/txtHeader"/>
+            android:textSize="18sp"
+            android:text="@string/ads_1.1" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:textSize="18dp"
-            android:id="@+id/txtContent"/>
+            android:textSize="16sp"
+            android:text="@string/ads_1.2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="16sp"
+            android:text="@string/ads_1.3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="16sp"
+            android:text="@string/ads_1.4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="16sp"
+            android:text="@string/ads_1.5" />
 
 
     </LinearLayout>

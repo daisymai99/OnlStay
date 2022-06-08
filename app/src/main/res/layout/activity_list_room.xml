@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListRoom"
+    tools:context=".activities.ListRoom"
     android:orientation="vertical">
 
     <androidx.appcompat.widget.SearchView
@@ -20,7 +20,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="wrap_content"
@@ -33,11 +33,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18dp"
-            android:layout_gravity="center|end"
-            android:layout_marginLeft="50dp"
-            android:text="Ngày"
+            android:layout_gravity="right"
+            android:text=""
             android:textStyle="bold"
             android:id="@+id/tvDate"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="right"
+            android:text=""
+            android:textStyle="bold"
+            android:id="@+id/tvDateEnd"/>
+
+
 
 
 

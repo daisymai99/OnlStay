@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.daisymai99.onlstay.List_Place
+import com.daisymai99.onlstay.activities.List_Place
 import com.daisymai99.onlstay.R
 import com.daisymai99.onlstay.adapter.AdsAdapter
 import com.daisymai99.onlstay.adapter.CardAdapter

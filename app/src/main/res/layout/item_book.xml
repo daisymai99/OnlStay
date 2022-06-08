@@ -7,6 +7,7 @@
     app:cardCornerRadius="8dp"
     android:elevation="10dp"
     hardwareAccelerated="true"
+    android:layout_margin="15dp"
     android:layout_marginBottom="20dp">
 
     <LinearLayout
@@ -21,36 +22,38 @@
             android:id="@+id/image_room"/>
 
         <TextView
+            android:id="@+id/txt_ID_Rooom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/txt_ID_Rooom"
-            android:textSize="25dp"
-            android:textStyle="bold"
+            android:layout_margin="10dp"
             android:text="alo"
-            android:layout_margin="20dp"/>
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             hardwareAccelerated = "true">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:backgroundTint="#14E1D3D3"
+                android:orientation="vertical">
 
                 <TextView
                     android:text=""
-                    android:layout_margin="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/txtTimeNhan"/>
 
                 <TextView
                     android:text=""
-                    android:layout_marginLeft="100dp"
-                    android:layout_margin="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/txtTimeTra"/>
@@ -65,31 +68,28 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+
         <TextView
+            android:id="@+id/txtPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="25dp"
             android:text="100 000Đ"
             android:textColor="@color/black"
-            android:id="@+id/txtPrice"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="10dp"/>
-
+            android:textSize="18dp"
+            android:textStyle="bold" />
 
         <TextView
+            android:layout_marginTop="10dp"
             android:gravity="right"
             android:textColor="#F44336"
             android:id="@+id/txtStatus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
             android:text="Trạng thái"
+            android:layout_marginBottom="5dp"
             android:textSize="16dp" />
 
         <!--<androidx.appcompat.widget.AppCompatButton

@@ -1,18 +1,10 @@
-package com.daisymai99.onlstay
+package com.daisymai99.onlstay.activities
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.daisymai99.onlstay.adapter.AdsAdapter
-import com.daisymai99.onlstay.adapter.CardAdapter
-import com.daisymai99.onlstay.adapter.Circle_Recycle_Adapter
-import com.daisymai99.onlstay.adapter.RcmAdapter
+import com.daisymai99.onlstay.R
 import com.daisymai99.onlstay.databinding.ActivityOwnerMain2Binding
-import com.daisymai99.onlstay.databinding.FragmentHomeBinding
 import com.daisymai99.onlstay.frag.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -30,7 +22,8 @@ class Owner_main : AppCompatActivity() {
 
 
 
-        supportFragmentManager.beginTransaction().replace(R.id.fragment_container_view_tag,
+        supportFragmentManager.beginTransaction().replace(
+            R.id.fragment_container_view_tag,
             HomeFragment()
         ).commit()
 

@@ -20,8 +20,8 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/account"/>
 
@@ -51,11 +51,12 @@
                     android:id="@+id/btn_info"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
+                    android:layout_margin="20dp"
                     android:layout_marginTop="30dp"
-                    android:background="@color/white"
-                    android:text="@string/info_user"
-                    android:textColor="#827717" />
+                    android:background="@drawable/backgound"
+                    android:backgroundTint="#FFA500"
+                    android:text="Thoát ra"
+                    android:textColor="@color/white" />
 
 
 
@@ -76,7 +77,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="30dp"
-        android:background="@color/purple_700"
+        android:background="@drawable/backgound"
+        android:backgroundTint="@color/purple_700"
         android:clickable="true"
         android:text="Khách hàng"
         android:textColor="@color/white" />
@@ -87,8 +89,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="30dp"
-        android:background="@color/white"
+        android:background="@drawable/backgound"
+        android:backgroundTint="@color/editText"
         android:clickable="true"
         android:text="@string/owner"
-        android:textColor="#827717" />
+        android:textColor="@color/black" />
 </LinearLayout>

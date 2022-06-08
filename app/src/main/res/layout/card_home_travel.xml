@@ -5,14 +5,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="10dp"
     android:layout_marginRight="25dp"
-    android:layout_marginLeft="8dp"
     android:layout_marginBottom="10dp"
     hardwareAccelerated="true"
     app:cardElevation="15dp">
 
 
         <LinearLayout
-            android:layout_width="280dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 

@@ -57,53 +57,47 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
+
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/edtTimeNhanPhong"
-                    android:shadowRadius="@android:integer/config_mediumAnimTime"
-                    android:hint="thời gian nhận phòng"
-                    android:inputType="text"/>
+                    android:text="chọn ngày"
+                    android:id="@+id/btn_pickDate"/>
 
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/edtTimeTraPhong"
-                    android:shadowRadius="@android:integer/config_mediumAnimTime"
-                    android:hint="thời gian trả"
-                    android:inputType="text"/>
+                    android:textSize="16dp"
+                    android:layout_gravity="center|end"
+                    android:layout_marginLeft="10dp"
+                    android:text="Ngày"
+                    android:textStyle="bold"
+                    android:id="@+id/tvDate"/>
 
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <!--<com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/edtStatus"
-                    android:shadowRadius="@android:integer/config_mediumAnimTime"
-                    android:hint="tình trạng phòng"
-                    android:inputType="text"/>
+                    android:textSize="16dp"
+                    android:layout_gravity="center|end"
+                    android:layout_marginLeft="10dp"
+                    android:text="Ngày"
+                    android:textStyle="bold"
+                    android:id="@+id/tvDateEnd"/>
 
-            </com.google.android.material.textfield.TextInputLayout>-->
+
+
+            </LinearLayout>
+
+
+
+
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -132,7 +126,7 @@
                 android:layout_marginTop="15dp"
                 android:id="@+id/spinner"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="50dp" />
 
 
 

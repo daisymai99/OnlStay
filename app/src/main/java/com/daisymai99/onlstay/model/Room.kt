@@ -19,7 +19,8 @@ class Room {
         timeNhanPhong: String?,
         timeTraPhong: String?,
         statusRoom: Boolean?,
-        price :String
+        price :String, idOwner :String?,
+        idUser :String?
     ) {
         this.id = id
         this.noiQuyPhong = noiQuyPhong
@@ -28,5 +29,26 @@ class Room {
         this.timeTraPhong = timeTraPhong
         this.statusRoom = statusRoom
         this.price = price
+        this.idOwner = idOwner
+        this.idUser = idUser
+    }
+
+    constructor(
+        id: Int,
+        noiQuyPhong: String?,
+        img: String?,
+        timeNhanPhong: String?,
+        statusRoom: Boolean?,
+        price :String, idOwner :String?,
+        idUser :String?
+    ){
+        this.id = id
+        this.noiQuyPhong = noiQuyPhong
+        this.img = img
+        this.timeNhanPhong = timeNhanPhong
+        this.statusRoom = statusRoom
+        this.price = price
+        this.idOwner = idOwner
+        this.idUser = idUser
     }
 }

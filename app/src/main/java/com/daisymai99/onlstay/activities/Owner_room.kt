@@ -1,4 +1,4 @@
-package com.daisymai99.onlstay
+package com.daisymai99.onlstay.activities
 
 import android.R
 import android.content.Intent
@@ -11,18 +11,14 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import com.bumptech.glide.Glide
+import com.daisymai99.onlstay.MainActivity
 import com.daisymai99.onlstay.databinding.ActivityOwnerRoomBinding
 import com.daisymai99.onlstay.model.Room
-import com.google.common.io.Files.getFileExtension
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
-import java.net.URI
 import java.text.SimpleDateFormat
 import java.util.*
-import kotlin.collections.ArrayList
-import kotlin.collections.HashMap
 
 class Owner_room : AppCompatActivity() {
 
@@ -76,7 +72,9 @@ class Owner_room : AppCompatActivity() {
             override fun onNothingSelected(parent: AdapterView<*>?) {}
         })
 
-        binding.btnUpLoadRoom.setOnClickListener {
+
+
+        /*binding.btnAddroom.setOnClickListener {
 
             val room = Room(
                 Integer.parseInt(binding.edtID.text.toString()),
@@ -87,17 +85,19 @@ class Owner_room : AppCompatActivity() {
                 status, binding.edtPrice.text.toString()
 
             )
+            Toast.makeText(applicationContext,"test sự kiện button ",Toast.LENGTH_LONG)
 
             database.child(binding.edtID.text.toString())
                 .setValue(room).addOnSuccessListener{
-                    Toast.makeText(applicationContext,"Thêm phòng thành công !!!",Toast.LENGTH_LONG)
-                    startActivity(Intent(this,ListRoom::class.java))
+                    Toast.makeText(applicationContext,"Thêm phòng thành công !!!",Toast.LENGTH_LONG).show()
+                    startActivity(Intent(this, ListRoom::class.java))
 
                 }.addOnFailureListener{
-                    Toast.makeText(applicationContext,"Thêm phòng thất bại !!!",Toast.LENGTH_LONG)
-
+                    Toast.makeText(applicationContext,"Thêm phòng thất bại !!!",Toast.LENGTH_LONG).show()
+                    startActivity(Intent(this, MainActivity::class.java))
                 }
-        }
+            startActivity(Intent(this, MainActivity::class.java))
+        }*/
     }
 
     private fun upLoadRoom() {
@@ -112,13 +112,13 @@ class Owner_room : AppCompatActivity() {
             .addOnSuccessListener {
 
                 storeReference.downloadUrl.addOnSuccessListener { uri ->
-                    Glide.with(this).load(uri.toString())
-                        .into(binding.imageStore)
+                    Glide.with(this).load(uri.toString()).into(binding.imageStore)
                     urlString = uri.toString();
                 }
 
                 Toast.makeText(this.applicationContext,"Đã tạo thành công", Toast.LENGTH_LONG).show()
-                finish()
+
+
 
             }
 
@@ -151,8 +151,7 @@ class Owner_room : AppCompatActivity() {
                 )
             fileRef.putFile(IMGURI).addOnSuccessListener {
                 fileRef.downloadUrl.addOnSuccessListener { uri ->
-                    Glide.with(this).load(uri.toString())
-                        .into(binding.imageStore)
+                    Glide.with(this).load(uri.toString()).into(binding.imageStore)
                     urlString = uri.toString();
                 }
             }.addOnProgressListener { }.addOnFailureListener { }

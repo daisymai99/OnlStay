@@ -32,4 +32,6 @@
     <style name="Theme.OnlStay.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.OnlStay.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.OnlStay.ToolBar" parent="ThemeOverlay.AppCompat.ActionBar" />
 </resources>

@@ -6,12 +6,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-   <androidx.recyclerview.widget.RecyclerView
+   <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="match_parent"
-       android:layout_margin="20dp"
-       android:id="@+id/rcl_book"
-       tools:listitem="@layout/item_book"/>
+       android:orientation="vertical">
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:elevation="5dp"
+       app:cardElevation="5dp">
+
+      <TextView
+          android:layout_marginTop="10dp"
+          android:textColor="@color/black"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:text="Phòng bạn đã đặt"
+          android:textSize="20sp"
+          android:gravity="center_horizontal"/>
+   </androidx.cardview.widget.CardView>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/rcl_book"
+          tools:listitem="@layout/item_book"/>
+
+   </LinearLayout>
+
+
 
 
 

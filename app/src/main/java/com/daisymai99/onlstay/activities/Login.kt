@@ -1,14 +1,14 @@
-package com.daisymai99.onlstay
+package com.daisymai99.onlstay.activities
 
-import android.content.ContentValues.TAG
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import android.util.Log
 import android.widget.Toast
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import com.daisymai99.onlstay.MainActivity
+import com.daisymai99.onlstay.R
 import com.daisymai99.onlstay.databinding.ActivityLoginBinding
-import com.daisymai99.onlstay.frag.AccountFragment
 import com.daisymai99.onlstay.model.SavedPreference
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
@@ -35,6 +35,7 @@ class Login : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        installSplashScreen()
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -56,6 +57,10 @@ class Login : AppCompatActivity() {
         }
 
         binding.btnLogIn.setOnClickListener {
+            if (binding.edtName.text?.isEmpty() == true ||binding.edtPass.text?.isEmpty() == true ){
+                Toast.makeText(this,"Vui lòng không để trống email và mật khẩu",Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
             logInFirebase(binding.edtName.text.toString(),binding.edtPass.text.toString())
         }
 
@@ -116,8 +121,6 @@ class Login : AppCompatActivity() {
                         Log.d(TAG,"Account : $uname")
                         Log.d(TAG,"Account : $email")
 
-                        SavedPreference.setEmail(this,account.email.toString())
-                        SavedPreference.setUsername(this,account.displayName.toString())
 
                         val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
@@ -127,8 +130,8 @@ class Login : AppCompatActivity() {
 
                 }
                     .addOnFailureListener {
-                        Log.d(TAG,"LOGIN FAIL ${it.message}")
-                        Toast.makeText(this,it.toString(),Toast.LENGTH_SHORT).show()
+                        Log.d("LOGIN","LOGIN FAIL ${it.message}")
+                        Toast.makeText(this,"Vui lòng kiểm tra tài khoản",Toast.LENGTH_SHORT).show()
                     }
             }
         } catch (e: ApiException){
@@ -139,8 +142,25 @@ class Login : AppCompatActivity() {
     private fun logInFirebase(name : String, password :String){
         FirebaseAuth.getInstance().signInWithEmailAndPassword(name,password)
             .addOnCompleteListener {
-                if (!it.isSuccessful) return@addOnCompleteListener
+                if (!it.isSuccessful) {
+                    Log.d("LOGIN","LOGIN FAIL ")
+                    Toast.makeText(this,"Tài khoản này không tồn tại, vui lòng kiểm tra lại thông tin",Toast.LENGTH_SHORT).show()
+                    return@addOnCompleteListener
+                }
+                else{
+                    SavedPreference.setEmail(this,name)
+                    //SavedPreference.setUsername(this,name)
 
+
+                    Toast.makeText(this,"Đăng nhập thành công",Toast.LENGTH_SHORT).show()
+
+                    startActivity(Intent(this, MainActivity::class.java))
+                }
+
+            }
+            .addOnFailureListener {
+                Toast.makeText(this,"Vui lòng kiểm tra lại thông tin",Toast.LENGTH_SHORT).show()
+                return@addOnFailureListener
             }
     }
 

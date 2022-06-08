@@ -1,14 +1,14 @@
-package com.daisymai99.onlstay
+package com.daisymai99.onlstay.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.daisymai99.onlstay.R
 import com.daisymai99.onlstay.adapter.Circle_Recycle_Adapter
 import com.daisymai99.onlstay.adapter.SearchAdapter
 import com.daisymai99.onlstay.databinding.ActivityListPlaceBinding
-import java.util.*
 import kotlin.collections.ArrayList
 
 class List_Place : AppCompatActivity() {

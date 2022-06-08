@@ -4,25 +4,27 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/OnlStay/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2" />
+        <entry key="..\:/OnlStay/app/src/main/res/drawable/backgound.xml" value="0.1265" />
         <entry key="..\:/OnlStay/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2" />
         <entry key="..\:/OnlStay/app/src/main/res/drawable/ic_splash_screen.xml" value="0.2265" />
         <entry key="..\:/OnlStay/app/src/main/res/layout/activity_ads1.xml" value="0.22592592592592592" />
         <entry key="..\:/OnlStay/app/src/main/res/layout/activity_ads2.xml" value="0.22592592592592592" />
         <entry key="..\:/OnlStay/app/src/main/res/layout/activity_list_place.xml" value="0.25416666666666665" />
-        <entry key="..\:/OnlStay/app/src/main/res/layout/activity_list_room.xml" value="0.22592592592592592" />
+        <entry key="..\:/OnlStay/app/src/main/res/layout/activity_list_room.xml" value="0.12533333333333332" />
         <entry key="..\:/OnlStay/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/OnlStay/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/OnlStay/app/src/main/res/layout/activity_owner_main.xml" value="0.22592592592592592" />
         <entry key="..\:/OnlStay/app/src/main/res/layout/activity_owner_main2.xml" value="0.22592592592592592" />
         <entry key="..\:/OnlStay/app/src/main/res/layout/activity_owner_room.xml" value="0.20462962962962963" />
         <entry key="..\:/OnlStay/app/src/main/res/layout/activity_sign_up.xml" value="0.22592592592592592" />
+        <entry key="..\:/OnlStay/app/src/main/res/layout/activity_test_create_room.xml" value="0.22592592592592592" />
         <entry key="..\:/OnlStay/app/src/main/res/layout/card_1_coloumn.xml" value="0.25416666666666665" />
         <entry key="..\:/OnlStay/app/src/main/res/layout/card_home_travel.xml" value="0.25416666666666665" />
         <entry key="..\:/OnlStay/app/src/main/res/layout/circle_list_city.xml" value="0.25416666666666665" />
         <entry key="..\:/OnlStay/app/src/main/res/layout/fragment_acc.xml" value="0.25416666666666665" />
         <entry key="..\:/OnlStay/app/src/main/res/layout/fragment_account.xml" value="0.25416666666666665" />
         <entry key="..\:/OnlStay/app/src/main/res/layout/fragment_account2.xml" value="0.25416666666666665" />
-        <entry key="..\:/OnlStay/app/src/main/res/layout/fragment_book.xml" value="0.25416666666666665" />
+        <entry key="..\:/OnlStay/app/src/main/res/layout/fragment_book.xml" value="0.18027336534909494" />
         <entry key="..\:/OnlStay/app/src/main/res/layout/fragment_favo.xml" value="0.25416666666666665" />
         <entry key="..\:/OnlStay/app/src/main/res/layout/fragment_favor.xml" value="0.16" />
         <entry key="..\:/OnlStay/app/src/main/res/layout/fragment_first.xml" value="0.22592592592592592" />

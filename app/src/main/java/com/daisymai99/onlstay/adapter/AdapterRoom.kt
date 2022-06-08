@@ -14,8 +14,7 @@ import android.widget.TextView
 import com.daisymai99.onlstay.R
 import com.daisymai99.onlstay.model.Room
 
-class AdapterRoom(var context: Context, var list: List<Room>) :
-    RecyclerView.Adapter<AdapterRoom.Viewholider>() {
+class AdapterRoom(var context: Context, var list: List<Room>) : RecyclerView.Adapter<AdapterRoom.Viewholider>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Viewholider {
         val inflater = LayoutInflater.from(context)
@@ -25,14 +24,12 @@ class AdapterRoom(var context: Context, var list: List<Room>) :
 
     override fun onBindViewHolder(holder: Viewholider, position: Int) {
         val room = list[position]
-        Glide.with(context)
-            .load(room.img)
-            .error(R.mipmap.ic_launcher)
-            .into(holder.imgRoom)
-        holder.txtNumberRoom.text = "Số phòng: " + room.id
-        holder.txtTimeNhan.text = "Thời gian nhận phòng: " + room.timeNhanPhong
-        holder.txtTimeTra.text = "Thời gian trả phòng: " + room.timeTraPhong
-        holder.txtPrice.text ="Số tiền : "+room.price
+        Glide.with(context).load(room.img).error(R.mipmap.ic_launcher).into(holder.imgRoom)
+
+        holder.txtNumberRoom.text = "Địa chỉ " + room.noiQuyPhong
+        holder.txtTimeNhan.text = "Ngày bắt đầu " + room.timeNhanPhong
+        holder.txtTimeTra.text = "Ngày hết " + room.timeTraPhong
+        holder.txtPrice.text =""+room.price+"Đ"
         if (room.statusRoom == false) holder.txtStatus.text =
             "Trạng thái phòng: Trống" else holder.txtStatus.text =
             "Trạng thái phòng: Đã có người"

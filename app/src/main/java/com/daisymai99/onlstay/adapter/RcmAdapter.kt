@@ -4,7 +4,7 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.daisymai99.onlstay.ListRoom
+import com.daisymai99.onlstay.activities.ListRoom
 import com.daisymai99.onlstay.R
 import com.daisymai99.onlstay.databinding.ItemRcmBinding
 
@@ -24,7 +24,7 @@ class RcmAdapter(var header : ArrayList<String>, var txt : ArrayList<String>) :R
             binding.txt.text = txt[position]
 
             binding.img.setOnClickListener {
-                it.context.startActivity(Intent(it.context,ListRoom::class.java))
+                it.context.startActivity(Intent(it.context, ListRoom::class.java))
             }
         }
     }

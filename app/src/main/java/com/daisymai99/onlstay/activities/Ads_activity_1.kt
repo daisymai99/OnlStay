@@ -1,4 +1,4 @@
-package com.daisymai99.onlstay
+package com.daisymai99.onlstay.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

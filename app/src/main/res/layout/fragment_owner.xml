@@ -18,11 +18,12 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center_vertical"
                 android:id="@+id/btn_image"
                 android:src="@drawable/account"/>
@@ -46,15 +47,10 @@
                     android:layout_height="wrap_content"
                     android:text="email"
                     android:textSize="16dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="10dp"
                     android:id="@+id/txtUserEmail"/>
 
-
-
-
             </LinearLayout>
-
-
 
         </LinearLayout>
 
@@ -66,14 +62,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
         android:src="@drawable/add"
         app:fabSize="normal" />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:layout_margin="20dp">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"

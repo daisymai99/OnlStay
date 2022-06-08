@@ -4,7 +4,7 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.daisymai99.onlstay.List_Place
+import com.daisymai99.onlstay.activities.List_Place
 import com.daisymai99.onlstay.R
 import com.daisymai99.onlstay.databinding.CardHomeTravelBinding
 
@@ -27,7 +27,8 @@ class CardAdapter() : RecyclerView.Adapter<CardAdapter.ViewHolder>() {
             binding.img.setImageResource(image[position])
             binding.textHeader.text = textheader[position]
             binding.txt.text = txt[position]
-            binding.img.setOnClickListener { v -> v.context.startActivity(Intent(v.context,List_Place::class.java)) }
+            binding.img.setOnClickListener { v -> v.context.startActivity(Intent(v.context,
+                List_Place::class.java)) }
         }
     }
 

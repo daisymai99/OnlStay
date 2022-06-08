@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login"
+    tools:context=".activities.Login"
     android:orientation="vertical">
 
 
@@ -50,7 +50,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_margin="20dp"
             android:orientation="vertical">
 
 
@@ -66,6 +67,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/edtName"
                     android:shadowRadius="@android:integer/config_mediumAnimTime"
+                    android:background="@drawable/backgound"
+                    android:backgroundTint="@color/editText"
                     android:hint="Nhập tên"
                     android:inputType="text"/>
 
@@ -77,6 +80,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
+                android:background="@drawable/backgound"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -84,6 +88,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/edtPass"
                     android:shadowRadius="@android:integer/config_mediumAnimTime"
+                    android:background="@drawable/backgound"
+                    android:backgroundTint="@color/editText"
                     android:hint="Nhập mật khẩu"
                     android:inputType="text"/>
 
@@ -99,7 +105,8 @@
             android:layout_marginTop="30dp"
             android:layout_gravity="center_horizontal"
             android:text="Đăng nhập"
-            android:background="@color/purple_700"
+            android:background="@drawable/backgound"
+            android:backgroundTint="@color/purple_700"
             android:textColor="@color/white"
             android:id="@+id/btnLogIn"/>
 
@@ -110,17 +117,22 @@
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_marginTop="30dp"
+            android:background="@drawable/backgound"
             android:layout_gravity="center_horizontal"
             android:id="@+id/btn_sIgnInEmail"/>
 
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="30dp"
+        <androidx.appcompat.widget.AppCompatCheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chưa có tài khoản ?"
+            android:id="@+id/btn_signUp"
+            android:clickable="true"
+            android:textStyle="bold"
             android:layout_gravity="center_horizontal"
-            android:text="Đăng ký"
-            android:id="@+id/btn_signUp"/>
+            android:layout_marginTop="70dp"/>
+
+
 
 
     </LinearLayout>

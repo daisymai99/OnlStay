@@ -9,8 +9,9 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.daisymai99.onlstay.Owner_room
+import com.daisymai99.onlstay.activities.Owner_room
 import com.daisymai99.onlstay.R
+import com.daisymai99.onlstay.Test_Create_Room
 
 import com.daisymai99.onlstay.adapter.AdapterRoom
 
@@ -44,11 +45,11 @@ class OwnerFragment :Fragment() {
 
         var floating : FloatingActionButton = view.findViewById(R.id.btn_floating)
         floating.setOnClickListener {
-            startActivity(Intent(view.context,Owner_room::class.java))
+            startActivity(Intent(view.context, Test_Create_Room::class.java))
         }
 
         var list = mutableListOf<Room>()
-        databaseReference = FirebaseDatabase.getInstance().reference.child("ROOM")
+        databaseReference = FirebaseDatabase.getInstance().reference.child("room")
         databaseReference!!.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 if (snapshot.exists()) {

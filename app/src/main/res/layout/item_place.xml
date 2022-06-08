@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:text="Mai"
         android:layout_gravity="center_vertical"
-        android:textSize="24dp"
+        android:textSize="20dp"
         android:layout_marginLeft="15dp"
         android:id="@+id/txtItemPlace"/>
 

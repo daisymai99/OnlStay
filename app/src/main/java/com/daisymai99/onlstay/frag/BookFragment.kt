@@ -7,10 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.daisymai99.onlstay.R
 import com.daisymai99.onlstay.adapter.AdapterRoom
-import com.daisymai99.onlstay.adapter.AdsAdapter
-import com.daisymai99.onlstay.adapter.itemBook
 import com.daisymai99.onlstay.databinding.FragmentBookBinding
 import com.daisymai99.onlstay.model.Room
 import com.google.firebase.database.*
@@ -34,13 +31,16 @@ class BookFragment : Fragment() {
 
         recylerView = binding.rclBook
         var list = mutableListOf<Room>()
-        databaseReference = FirebaseDatabase.getInstance().reference.child("ROOM")
+        databaseReference = FirebaseDatabase.getInstance().reference.child("room")
         databaseReference!!.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 if (snapshot.exists()) {
                     for (ds in snapshot.children) {
                         val room = ds.getValue(Room::class.java)
-                        room?.let { list.add(it) }
+                        if (room?.statusRoom == true){
+                            room?.let { list.add(it) }
+                        }
+
                     }
 
                     var  adapterRoom =
@@ -61,12 +61,6 @@ class BookFragment : Fragment() {
 
 
 
-
-
-
-        /*binding.rclBook.layoutManager = LinearLayoutManager(this.context, LinearLayoutManager.HORIZONTAL,false)
-        binding.rclBook.setHasFixedSize(true)
-        binding.rclBook.adapter = itemboook*/
         return binding.root
     }
 
